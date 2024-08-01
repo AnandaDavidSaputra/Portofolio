@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Providd</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navbar -->
+    <nav class="bg-gray-800 p-4 fixed w-full z-10">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold">Providd</a>
+            <div class="space-x-4">
+                <a href="#about" class="hover:text-yellow-500">About</a>
+                <a href="#skills" class="hover:text-yellow-500">Skills</a>
+                <a href="#projects" class="hover:text-yellow-500">Projects</a>
+                <a href="#contact" class="hover:text-yellow-500">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-900 h-screen flex flex-col justify-center items-center">
+        <h1 class="text-5xl md:text-7xl font-bold mb-4">Hello, I'm Ananda David Saputra</h1>
+        <p class="text-xl md:text-2xl mb-8">I love building Mobile applications and Web applications.</p>
+        <a href="#projects" class="bg-yellow-500 text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-yellow-600 transition duration-300">View My Work</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6 md:px-12">
+            <h2 class="text-4xl font-bold mb-8 text-center">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <img src="your-photo.jpg" alt="Your Photo" class="w-32 h-32 md:w-48 md:h-48 rounded-full mx-auto mb-6 md:mb-0">
+                <div class="md:ml-8 text-center md:text-left">
+                    <p class="mb-4">I am a passionate programmer with experience in building web applications using modern technologies. I enjoy solving problems and continuously learning new things.</p>
+                    <p class="mb-4">When I'm not coding, I enjoy playing sports and improving my physical fitness.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6 md:px-12">
+            <h2 class="text-4xl font-bold mb-8 text-center">Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">HTML</h3>
+                    <p>Experienced in building semantic and accessible web pages.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">CSS</h3>
+                    <p>Proficient in styling with modern CSS and frameworks like Tailwind CSS.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">JavaScript</h3>
+                    <p>Skilled in writing clean and efficient JavaScript code.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">React</h3>
+                    <p>Experienced in building dynamic and responsive web applications using React.</p>
+                </div>
+                <!-- Add more skills as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6 md:px-12">
+            <h2 class="text-4xl font-bold mb-8 text-center">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-gray-700 p-6 rounded-lg">
+                    <img src="images/Band.jpg" alt="Project 1" class="w-full h-48 rounded-lg mb-4">
+                    <h3 class="text-2xl font-bold mb-2">Music Instrument JavaScript</h3>
+                    <p class="mb-4">website for piano, guitar and drum musical instruments that will sound when there is interaction with the user</p>
+                    <a href="https://github.com/AnandaDavidSaputra/JS_MUSIC-.git" class="text-yellow-500 hover:underline">Code Project</a>
+                </div>                
+                <!-- Add more projects as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6 md:px-12">
+            <h2 class="text-4xl font-bold mb-8 text-center">Contact Me</h2>
+            <form class="max-w-lg mx-auto">
+                <div class="mb-6">
+                    <label for="name" class="block text-lg font-medium mb-2">Name</label>
+                    <input type="text" id="name" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-yellow-500">
+                </div>
+                <div class="mb-6">
+                    <label for="email" class="block text-lg font-medium mb-2">Email</label>
+                    <input type="email" id="email" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-yellow-500">
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-lg font-medium mb-2">Message</label>
+                    <textarea id="message" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-yellow-500"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-yellow-500 text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition duration-300">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-6 text-center">
+        <p>&copy; 2024 MyPortfolio. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
